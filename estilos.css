@@ -21,6 +21,7 @@ header h1 {
 nav ul li {
     display: inline;
     margin-right: 20px;
+    color: aliceblue;
 }
 
 
@@ -32,6 +33,15 @@ main {
 
 article {
     margin-bottom: 20px;
+}
+
+th {
+    background-color: darkblue;
+    color: white;
+}
+
+td {
+    background-color: lightgrey;
 }
 
 footer {

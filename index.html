@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Manual</title>
     <link rel="stylesheet" href="estilos.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 </head>
     
 <body>
@@ -21,187 +23,1485 @@
 
     <main>
 
-        <table border="1">
-            <thead>
+      <table border="1">
+        <thead>
+          <tr>
+            <th rowspan="2">Etiqueta</th>
+            <th rowspan="2">Descripción</th>
+            <th colspan="2">Ejemplo</th>
+            <th rowspan="2">Más Información</th>
+          </tr>
+          <tr>
+            <th>HTML</th>
+            <th>Vista Web</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>a</td>
+            <td>La etiqueta 'a' se utiliza para crear enlaces web.</td>
+            <td><code>&lt;a href="https://cba.ucb.edu.bo/"&gt;Enlace de ejemplo&lt;/a&gt;</code></td>
+            <td><a href="https://cba.ucb.edu.bo/">Enlace al sitio UCB cbb</a></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/a">Más información</a></td>
+          </tr>
+          <tr>
+            <td>abbr</td>
+            <td>La etiqueta 'abbr' se usa para marcar abreviaturas o acrónimos.</td>
+            <td><code>&lt;abbr title="Universidad Catolica Boliviana"&gt;UCB&lt;/abbr&gt;</code></td>
+            <td><abbr title="Universidad Catolica Boliviana">UCB</abbr></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/abbr">Más información</a></td>
+          </tr>
+          <tr>
+            <td>address</td>
+            <td>La etiqueta 'address' se emplea para definir información de contacto.</td>
+            <td>
+              <pre><code>
+                
+                &lt;address&gt;
+                  &lt;p&gt;Correo electrónico: valery.arauco@ucb.edu.bo&lt;/p&gt;
+                  &lt;p&gt;Teléfono: 74054175&lt;/p&gt;
+                  &lt;p&gt;Dirección: Av. América entre Av. Gral. Galindo, Ciudad Cochabamba&lt;/p&gt;
+                &lt;/address&gt;
+                </code>
+              </pre>
+            </td>
+            <td><address>
+              <p>Correo electrónico: valery.arauco@ucb.edu.bo</p>
+              <p>Teléfono: 74054175</p>
+              <p>Dirección: Av. America entre Av. Gral. Galindo, Ciudad Cochabamba</p>
+              </address>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/address">Más información</a></td>
+          </tr>
+          <tr>
+            <td>area</td>
+            <td>La etiqueta 'area' se usa en mapas de imágenes para definir áreas de enlace.</td>
+            <td><code>&lt;area href="https://www.ejemplo.com" alt="Área de ejemplo"&gt;Área de enlace&lt;/area&gt;</code></td>
+            <td><area href="https://www.ejemplo.com" alt="Área de ejemplo">Área de enlace</area></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/area">Más información</a></td>
+          </tr>
+          <tr>
+            <td>article</td>
+            <td>La etiqueta 'article' encierra contenido independiente del resto de la pagina web</td>
+            <td><code>&lt;article&gt;Contenido del artículo aquí&lt;/article&gt;</code></td>
+            <td><article>Contenido del artículo aquí</article></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/article">Más información</a></td>
+          </tr>
+          <tr>
+            <td>aside</td>
+            <td>La etiqueta 'aside' se emplea para contenido relacionado pero tangencial.</td>
+            <td><code>&lt;aside&gt;Contenido lateral aquí&lt;/aside&gt;</code></td>
+            <td><aside>Contenido lateral aquí</aside></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/aside">Más información</a></td>
+          </tr>
+          <tr>
+            <td>audio</td>
+            <td>La etiqueta 'audio' se utiliza para insertar reproductores de audio en una página web.</td>
+            <td><code>&lt;audio controls src="audio.mp3"&gt;Reproducir audio&lt;/audio&gt;</code></td>
+            <td><audio controls src="audio.mp3">Reproducir audio</audio></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/audio">Más información</a></td>
+          </tr>
+          <tr>
+            <td>b</td>
+            <td>Las etiquetas 'b' se utilizan para enfatizar texto de manera visual, sin darle importancia semántica.</td>
+            <td><code>&lt;b&gt;Texto enfatizado&lt;/b&gt;</code></td>
+            <td><b>Texto enfatizado</b></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/b">Más información</a></td>
+          </tr>
+          <tr>
+            <td>base</td>
+            <td>La etiqueta 'base' se utiliza para especificar la URL base y el objetivo predeterminado para enlaces y formularios en un documento.</td>
+            <td><code>&lt;base href="https://www.ejemplo.com" target="_blank"&gt;</code></td>
+            <td>(N/A)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/base">Más información</a></td>
+          </tr>
+          <tr>
+            <td>bdi</td>
+            <td>La etiqueta 'bdi' se utiliza para aislar la dirección del texto y evitar que afecte a la dirección de texto circundante.</td>
+            <td><code>&lt;bdi&gt;Texto en dirección aislada&lt;/bdi&gt;</code></td>
+            <td><bdi>Texto en dirección aislada</bdi></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/bdi">Más información</a></td>
+          </tr>
+          <tr>
+            <td>bdo</td>
+            <td>La etiqueta 'bdo' se utiliza para aplicar formato a la dirección del texto, como cambiar de derecha a izquierda o de izquierda a derecha.</td>
+            <td><code>&lt;bdo dir="rtl"&gt;Texto con dirección derecha a izquierda&lt;/bdo&gt;</code></td>
+            <td><bdo dir="rtl">Texto con dirección derecha a izquierda</bdo></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/bdo">Más información</a></td>
+          </tr>
+          <tr>
+            <td>blockquote</td>
+            <td>La etiqueta 'blockquote' se utiliza para citar una sección de texto de otra fuente.</td>
+            <td><code>&lt;blockquote cite="https://www.ejemplofuente.com"&gt;Texto citado aquí&lt;/blockquote&gt;</code></td>
+            <td><blockquote cite="https://www.ejemplofuente.com">Texto citado aquí</blockquote></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/blockquote">Más información</a></td>
+          </tr>
+          <tr>
+            <td>body</td>
+            <td>La etiqueta 'body' define el cuerpo del documento HTML y contiene todo el contenido visible en la página web.</td>
+            <td><code>&lt;body&gt;Contenido del cuerpo aquí&lt;/body&gt;</code></td>
+            <td>(N/A)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/body">Más información</a></td>
+          </tr>
+          <tr>
+            <td>br</td>
+            <td>La etiqueta 'br' se utiliza para insertar saltos de línea, por ejemplo, en un poema o una dirección postal.</td>
+            <td><code>&lt;p&gt;Primer línea.&lt;br&gt;Segunda línea.&lt;/p&gt;</code></td>
+            <td>
+              <p>Primer línea.<br>Segunda línea.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/br">Más información</a></td>
+          </tr>
+          <tr>
+            <td>button</td>
+            <td>Las etiquetas 'button' se utilizan para crear botones interactivos en formularios web.</td>
+            <td><code>&lt;button type="button"&gt;Haz clic&lt;/button&gt;</code></td>
+            <td><button type="button">Haz clic</button></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/button">Más información</a></td>
+          </tr>
+          <tr>
+            <td>canvas</td>
+            <td>La etiqueta 'canvas' se utiliza para crear un lienzo en el que se pueden dibujar gráficos, animaciones y otros elementos visuales mediante JavaScript.</td>
+            <td><code>&lt;canvas width="400" height="200"&gt;&lt;/canvas&gt;</code></td>
+            <td>
+              <canvas width="400" height="200"></canvas>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/canvas">Más información</a></td>
+          </tr>
+          <tr>
+            <td>caption</td>
+            <td>La etiqueta 'caption' se utiliza para definir el título o leyenda de una tabla.</td>
+            <td>
+              <code>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;caption&gt;Título de la tabla&lt;/caption&gt;<br>
+                &nbsp;&nbsp;<!-- Contenido de la tabla --><br>
+                &lt;/table&gt;
+              </code>
+            </td>
+            <td>
+              <table>
+                <caption>Título de la tabla</caption>
+                <!-- Contenido de la tabla -->
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/caption">Más información</a></td>
+          </tr>
+          <tr>
+            <td>cite</td>
+            <td>La etiqueta 'cite' se utiliza para marcar el título de una obra, como un libro, película o artículo.</td>
+            <td><code>&lt;p&gt;El libro &lt;cite&gt;"Matar a un ruiseñor"&lt;/cite&gt; es muy conocido.&lt;/p&gt;</code></td>
+            <td>
+              <p>El libro <cite>"Matar a un ruiseñor"</cite> es muy conocido.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/cite">Más información</a></td>
+          </tr>
+          <tr>
+            <td>code</td>
+            <td>La etiqueta 'code' se utiliza para mostrar fragmentos de código fuente en un documento.</td>
+            <td><code>&lt;p&gt;Para imprimir un mensaje en Python, utiliza &lt;code&gt;print("Hola, mundo")&lt;/code&gt;.&lt;/p&gt;</code></td>
+            <td>
+              <p>Para imprimir un mensaje en Python, utiliza <code>print("Hola, mundo")</code>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/code">Más información</a></td>
+          </tr>
+          <tr>
+            <td>col</td>
+            <td>La etiqueta 'col' se utiliza para definir propiedades de formato para columnas en una tabla.</td>
+            <td>
+              <code>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;colgroup&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;col span="2" style="background-color: yellow;"&gt;<br>
+                &nbsp;&nbsp;&lt;/colgroup&gt;<br>
+                &nbsp;&nbsp;<!-- Contenido de la tabla --><br>
+                &lt;/table&gt;
+              </code>
+            </td>
+            <td>
+              <table>
+                <colgroup>
+                  <col span="2" style="background-color: yellow;">
+                </colgroup>
+                <!-- Contenido de la tabla -->
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/col">Más información</a></td>
+          </tr>
+          <tr>
+            <td>colgroup</td>
+            <td>La etiqueta 'colgroup' se utiliza para agrupar un conjunto de etiquetas 'col' y definir propiedades de formato comunes para varias columnas en una tabla.</td>
+            <td>
+              <code>
+                &lt;table&gt;<br>
+                &nbsp;&nbsp;&lt;colgroup&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;col span="2" style="background-color: yellow;"&gt;<br>
+                &nbsp;&nbsp;&lt;/colgroup&gt;<br>
+                &nbsp;&nbsp;<!-- Contenido de la tabla --><br>
+                &lt;/table&gt;
+              </code>
+            </td>
+            <td>
+              <table>
+                <colgroup>
+                  <col span="2" style="background-color: yellow;">
+                </colgroup>
+                <!-- Contenido de la tabla -->
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/colgroup">Más información</a></td>
+          </tr>
+          <tr>
+            <td>data</td>
+            <td>La etiqueta 'data' se utiliza para representar datos que son la contraparte legible por máquina de un contenido visible.</td>
+            <td><code>&lt;p&gt;La temperatura es &lt;data value="25"&gt;25&lt;/data&gt; grados Celsius.&lt;/p&gt;</code></td>
+            <td>
+              <p>La temperatura es <data value="25">25</data> grados Celsius.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/data">Más información</a></td>
+          </tr>
+          <tr>
+            <td>datalist</td>
+            <td>La etiqueta 'datalist' se utiliza como contenedor para opciones de un control de cuadro combinado (combo box) en un formulario.</td>
+            <td>
+              <code>
+                &lt;input list="frutas"&gt;<br>
+                &lt;datalist id="frutas"&gt;<br>
+                &nbsp;&nbsp;&lt;option value="Manzana"&gt;<br>
+                &nbsp;&nbsp;&lt;option value="Banana"&gt;<br>
+                &nbsp;&nbsp;&lt;option value="Cereza"&gt;<br>
+                &lt;/datalist&gt;
+              </code>
+            </td>
+            <td>
+              <input list="frutas">
+              <datalist id="frutas">
+                <option value="Manzana">
+                <option value="Banana">
+                <option value="Cereza">
+              </datalist>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/datalist">Más información</a></td>
+          </tr>
+          <tr>
+            <td>dd</td>
+            <td>La etiqueta 'dd' se utiliza para proporcionar contenido que corresponde a un elemento 'dt' en una lista de definición (dl).</td>
+            <td>
+              <code>
+                &lt;dl&gt;<br>
+                &nbsp;&nbsp;&lt;dt&gt;Término&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&lt;dd&gt;Definición del término&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+              </code>
+            </td>
+            <td>
+              <dl>
+                <dt>Término</dt>
+                <dd>Definición del término</dd>
+              </dl>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dd">Más información</a></td>
+          </tr>
+          <tr>
+            <td>del</td>
+            <td>La etiqueta 'del' se utiliza para marcar un contenido que ha sido eliminado del documento.</td>
+            <td>
+              <code>
+                &lt;p&gt;El informe original fue &lt;del cite="https://www.ejemplo.com/informe1" datetime="2023-01-15"&gt;reemplazado por uno nuevo&lt;/del&gt;.&lt;/p&gt;
+              </code>
+            </td>
+            <td>
+              <p>El informe original fue <del cite="https://www.ejemplo.com/informe1" datetime="2023-01-15">reemplazado por uno nuevo</del>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/del">Más información</a></td>
+          </tr>
+          <tr>
+            <td>details</td>
+            <td>La etiqueta 'details' se utiliza como control de revelación para ocultar o mostrar detalles adicionales en una página web.</td>
+            <td>
+              <code>
+                &lt;details&gt;<br>
+                &nbsp;&nbsp;&lt;summary&gt;Ver detalles&lt;/summary&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Contenido adicional aquí.&lt;/p&gt;<br>
+                &lt;/details&gt;
+              </code>
+            </td>
+            <td>
+              <details>
+                <summary>Ver detalles</summary>
+                <p>Contenido adicional aquí.</p>
+              </details>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/details">Más información</a></td>
+          </tr>
+          <tr>
+            <td>dfn</td>
+            <td>La etiqueta 'dfn' se utiliza para marcar la instancia definitoria de un término en un documento.</td>
+            <td><code>&lt;p&gt;El término &lt;dfn&gt;HTML&lt;/dfn&gt; significa lenguaje de marcado de hipertexto.&lt;/p&gt;</code></td>
+            <td>
+              <p>El término <dfn>HTML</dfn> significa lenguaje de marcado de hipertexto.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dfn">Más información</a></td>
+          </tr>
+          <tr>
+            <td>dialog</td>
+            <td>La etiqueta 'dialog' se utiliza para crear una ventana de diálogo o caja de diálogo en una página web.</td>
+            <td>
+              <code>
+                &lt;dialog open&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Contenido de la ventana de diálogo.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;button&gt;Guardar&lt;/button&gt;<br>
+                &nbsp;&nbsp;&lt;button&gt;Cancelar&lt;/button&gt;<br>
+                &lt;/dialog&gt;
+              </code>
+            </td>
+            <td>
+              <dialog open>
+                <p>Contenido de la ventana de diálogo.</p>
+                <button>Guardar</button>
+                <button>Cancelar</button>
+              </dialog>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dialog">Más información</a></td>
+          </tr>
+          <tr>
+            <td>div</td>
+            <td>La etiqueta 'div' se utiliza como un contenedor genérico para agrupar elementos en un flujo de contenido o para agrupar pares de nombre y valor en elementos 'dl'.</td>
+            <td><code>&lt;div class="contenedor"&gt;Contenido aquí&lt;/div&gt;</code></td>
+            <td>
+              <div class="contenedor">Contenido aquí</div>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div">Más información</a></td>
+          </tr>
+          <tr>
+            <td>dl</td>
+            <td>La etiqueta 'dl' se utiliza para crear una lista de asociación que consiste en grupos de nombre y valor ('dt' y 'dd') o para agrupar elementos en un flujo de contenido.</td>
+            <td>
+              <code>
+                &lt;dl&gt;<br>
+                &nbsp;&nbsp;&lt;dt&gt;Nombre&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&lt;dd&gt;Valor&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+              </code>
+            </td>
+            <td>
+              <dl>
+                <dt>Nombre</dt>
+                <dd>Valor</dd>
+              </dl>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dl">Más información</a></td>
+          </tr>
+          <tr>
+            <td>dt</td>
+            <td>La etiqueta 'dt' se utiliza para marcar el término o nombre en una lista de definición ('dl').</td>
+            <td>
+              <code>
+                &lt;dl&gt;<br>
+                &nbsp;&nbsp;&lt;dt&gt;Término&lt;/dt&gt;<br>
+                &nbsp;&nbsp;&lt;dd&gt;Definición del término&lt;/dd&gt;<br>
+                &lt;/dl&gt;
+              </code>
+            </td>
+            <td>
+              <dl>
+                <dt>Término</dt>
+                <dd>Definición del término</dd>
+              </dl>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/dt">Más información</a></td>
+          </tr>
+          <tr>
+            <td>em</td>
+            <td>La etiqueta 'em' se utiliza para aplicar énfasis a un texto.</td>
+            <td><code>&lt;p&gt;Este es un texto &lt;em&gt;enfocado&lt;/em&gt;.&lt;/p&gt;</code></td>
+            <td>Este es un texto <em>enfocado</em>.</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/em">Más información</a></td>
+          </tr>
+          <tr>
+            <td>embed</td>
+            <td>La etiqueta 'embed' se utiliza para incrustar contenido multimedia, como videos o aplicaciones, en una página web.</td>
+            <td><code>&lt;embed src="video.mp4" type="video/mp4" width="320" height="240"&gt;</code></td>
+            <td> (contenido multimedia incrustado)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/embed">Más información</a></td>
+          </tr>
+          <tr>
+            <td>fieldset</td>
+            <td>La etiqueta 'fieldset' se utiliza para agrupar controles de formulario relacionados en un formulario web.</td>
+            <td>
+              <code>
+                &lt;form&gt;<br>
+                &nbsp;&nbsp;&lt;fieldset&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;&lt;legend&gt;Datos Personales&lt;/legend&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<!-- Controles de formulario aquí --><br>
+                &nbsp;&nbsp;&lt;/fieldset&gt;<br>
+                &lt;/form&gt;
+              </code>
+            </td>
+            <td>(controles de formulario agrupados)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/fieldset">Más información</a></td>
+          </tr>
+          <tr>
+            <td>figcaption</td>
+            <td>La etiqueta 'figcaption' se utiliza para proporcionar una descripción o título para un elemento 'figure'.</td>
+            <td>
+              <code>
+                &lt;figure&gt;<br>
+                &nbsp;&nbsp;&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                &nbsp;&nbsp;&lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;<br>
+                &lt;/figure&gt;
+              </code>
+            </td>
+            <td>
+              <figure>
+                <img src="imagen.jpg" alt="Descripción de la imagen">
+                <figcaption>Descripción de la imagen</figcaption>
+              </figure>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/figcaption">Más información</a></td>
+          </tr>
+          <tr>
+            <td>figure</td>
+            <td>La etiqueta 'figure' se utiliza para agrupar contenido relacionado, como imágenes, gráficos o tablas, con una etiqueta de descripción opcional ('figcaption').</td>
+            <td>
+              <code>
+                &lt;figure&gt;<br>
+                &nbsp;&nbsp;&lt;img src="imagen.jpg" alt="Descripción de la imagen"&gt;<br>
+                &nbsp;&nbsp;&lt;figcaption&gt;Descripción de la imagen&lt;/figcaption&gt;<br>
+                &lt;/figure&gt;
+              </code>
+            </td>
+            <td>
+              <figure>
+                <img src="imagen.jpg" alt="Descripción de la imagen">
+                <figcaption>Descripción de la imagen</figcaption>
+              </figure>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/figure">Más información</a></td>
+          </tr>
+          <tr>
+            <td>footer</td>
+            <td>La etiqueta 'footer' se utiliza para representar el pie de una página o sección.</td>
+            <td><code>&lt;footer&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;Derechos de autor © 2023&lt;/p&gt;<br>
+              &lt;/footer&gt;</code></td>
+            <td>
+              <footer>
+                <p>Derechos de autor © 2023</p>
+              </footer>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/footer">Más información</a></td>
+          </tr>
+          <tr>
+            <td>form</td>
+            <td>La etiqueta 'form' se utiliza para crear un formulario web que permite a los usuarios enviar datos al servidor.</td>
+            <td>
+              <code>
+                &lt;form action="/procesar" method="post"&gt;<br>
+                &nbsp;&nbsp;<!-- Campos de formulario aquí --><br>
+                &lt;/form&gt;
+              </code>
+            </td>
+            <td>(formulario web)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/form">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>h1, h2, h3, h4, h5, h6</td>
+            <td>Las etiquetas de encabezado (h1, h2, h3, h4, h5, h6) se utilizan para definir encabezados de diferentes niveles en una página web.</td>
+            <td>
+              <code>&lt;h1&gt;Encabezado de nivel 1&lt;/h1&gt;<br>
+              &lt;h2&gt;Encabezado de nivel 2&lt;/h2&gt;<br>
+              &lt;h3&gt;Encabezado de nivel 3&lt;/h3&gt;</code>
+            </td>
+            <td>
+              <h1>Encabezado de nivel 1</h1>
+              <h2>Encabezado de nivel 2</h2>
+              <h3>Encabezado de nivel 3</h3>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/Heading_Elements">Más información</a></td>
+          </tr>
+          <tr>
+            <td>head</td>
+            <td>La etiqueta 'head' se utiliza para contener metadatos, enlaces a hojas de estilo y otros elementos que no son visibles en la página web.</td>
+            <td>
+              <code>
+                &lt;head&gt;<br>
+                &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+                &nbsp;&nbsp;&lt;title&gt;Título de la página&lt;/title&gt;<br>
+                &lt;/head&gt;
+              </code>
+            </td>
+            <td> (metadatos y enlaces a hojas de estilo)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/head">Más información</a></td>
+          </tr>
+          <tr>
+            <td>header</td>
+            <td>La etiqueta 'header' se utiliza para representar encabezados introductorios o elementos de navegación en una página o sección.</td>
+            <td>
+              <code>
+                &lt;header&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Encabezado de la página&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;nav&gt;<br>
+                &nbsp;&nbsp;&nbsp;&nbsp;<!-- Enlaces de navegación aquí --><br>
+                &nbsp;&nbsp;&lt;/nav&gt;<br>
+                &lt;/header&gt;
+              </code>
+            </td>
+            <td>
+              <header>
+                <h1>Encabezado de la página</h1>
+                <nav>
+                  <!-- Enlaces de navegación aquí -->
+                </nav>
+              </header>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/header">Más información</a></td>
+          </tr>
+          <tr>
+            <td>hgroup</td>
+            <td>La etiqueta 'hgroup' se utiliza para agrupar varios elementos de encabezado ('h1' a 'h6') como una unidad.</td>
+            <td>
+              <code>
+                &lt;hgroup&gt;<br>
+                &nbsp;&nbsp;&lt;h1&gt;Encabezado principal&lt;/h1&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Subencabezado&lt;/h2&gt;<br>
+                &lt;/hgroup&gt;
+              </code>
+            </td>
+            <td>
+              <hgroup>
+                <h1>Encabezado principal</h1>
+                <h2>Subencabezado</h2>
+              </hgroup>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hgroup">Más información</a></td>
+          </tr>
+          <tr>
+            <td>hr</td>
+            <td>La etiqueta 'hr' se utiliza para crear una línea horizontal temática que separa contenido en una página web.</td>
+            <td>
+              <code>
+                &lt;p&gt;Texto antes de la línea horizontal&lt;/p&gt;<br>
+                &lt;hr&gt;<br>
+                &lt;p&gt;Texto después de la línea horizontal&lt;/p&gt;
+              </code>
+            </td>
+            <td>
+              <p>Texto antes de la línea horizontal</p>
+              <hr>
+              <p>Texto después de la línea horizontal</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/hr">Más información</a></td>
+          </tr>
+          <tr>
+            <td>html</td>
+            <td>La etiqueta 'html' se utiliza para envolver todo el contenido de una página web.</td>
+            <td>
+              <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="es"&gt;<br>
+                &nbsp;&nbsp;<!-- Contenido de la página aquí --><br>
+                &lt;/html&gt;
+              </code>
+            </td>
+            <td>(estructura de la página web)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/html">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>i</td>
+            <td>La etiqueta 'i' se utiliza para aplicar estilo de énfasis o enfatizar texto en itálica.</td>
+            <td>
+              <code>&lt;p&gt;Este es un texto &lt;i&gt;en itálica&lt;/i&gt;.&lt;/p&gt;</code>
+            </td>
+            <td><p>Este es un texto <i>en itálica</i>.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/i">Más información</a></td>
+          </tr>
+          <tr>
+            <td>iframe</td>
+            <td>La etiqueta 'iframe' se utiliza para incrustar contenido web, como otras páginas o videos, dentro de una página web.</td>
+            <td>
+              <code>&lt;iframe src="https://www.ejemplo.com" width="800" height="600"&gt;&lt;/iframe&gt;</code>
+            </td>
+            <td>(contenido web incrustado)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/iframe">Más información</a></td>
+          </tr>
+          <tr>
+            <td>img</td>
+            <td>La etiqueta 'img' se utiliza para mostrar imágenes en una página web.</td>
+            <td>
+              <code>&lt;img src="imagen.jpg" alt="Descripción de la imagen" width="400" height="300"&gt;</code>
+            </td>
+            <td><img src="imagen.jpg" alt="Descripción de la imagen" width="400" height="300"></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/img">Más información</a></td>
+          </tr>
+          <tr>
+            <td>input</td>
+            <td>La etiqueta 'input' se utiliza para crear controles de formulario interactivos que permiten a los usuarios ingresar datos.</td>
+            <td>
+              <code>&lt;input type="text" id="nombre" name="nombre" placeholder="Nombre"&gt;</code>
+            </td>
+            <td>(campo de entrada de texto)</td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/input">Más información</a></td>
+          </tr>
+          <tr>
+            <td>ins</td>
+            <td>La etiqueta 'ins' se utiliza para marcar un contenido que ha sido insertado en el documento.</td>
+            <td>
+              <code>&lt;p&gt;Este es un &lt;ins cite="https://www.ejemplo.com/revision" datetime="2023-09-20"&gt;nuevo párrafo&lt;/ins&gt;.&lt;/p&gt;</code>
+            </td>
+            <td><p>Este es un <ins cite="https://www.ejemplo.com/revision" datetime="2023-09-20">nuevo párrafo</ins>.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ins">Más información</a></td>
+          </tr>
+          <tr>
+            <td>kbd</td>
+            <td>La etiqueta 'kbd' se utiliza para representar entrada de usuario o contenido de teclado en un documento.</td>
+            <td>
+              <code>&lt;p&gt;Pulsa &lt;kbd&gt;Ctrl&lt;/kbd&gt; + &lt;kbd&gt;C&lt;/kbd&gt; para copiar.&lt;/p&gt;</code>
+            </td>
+            <td><p>Pulsa <kbd>Ctrl</kbd> + <kbd>C</kbd> para copiar.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/kbd">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>label</td>
+            <td>La etiqueta 'label' se utiliza para proporcionar una etiqueta descriptiva para un control de formulario.</td>
+            <td>
+              <code>&lt;label for="nombre"&gt;Nombre:&lt;/label&gt;<br>
+              &lt;input type="text" id="nombre" name="nombre"&gt;</code>
+            </td>
+            <td>
+              <label for="nombre">Nombre:</label><br>
+              <input type="text" id="nombre" name="nombre">
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/label">Más información</a></td>
+          </tr>
+          <tr>
+            <td>legend</td>
+            <td>La etiqueta 'legend' se utiliza para proporcionar una leyenda o título para un elemento 'fieldset'.</td>
+            <td>
+              <code>&lt;fieldset&gt;<br>
+              &nbsp;&nbsp;&lt;legend&gt;Información de contacto&lt;/legend&gt;<br>
+              &nbsp;&nbsp;<!-- Controles de formulario aquí --><br>
+              &lt;/fieldset&gt;</code>
+            </td>
+            <td>
+              <fieldset>
+                <legend>Información de contacto</legend>
+                <!-- Controles de formulario aquí -->
+              </fieldset>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/legend">Más información</a></td>
+          </tr>
+          <tr>
+            <td>li</td>
+            <td>La etiqueta 'li' se utiliza para representar un elemento de lista en una lista ordenada ('ol') o no ordenada ('ul').</td>
+            <td>
+              <code>&lt;ul&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Elemento de lista 1&lt;/li&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Elemento de lista 2&lt;/li&gt;<br>
+              &lt;/ul&gt;</code>
+            </td>
+            <td>
+              <ul>
+                <li>Elemento de lista 1</li>
+                <li>Elemento de lista 2</li>
+              </ul>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/li">Más información</a></td>
+          </tr>
+          <tr>
+            <td>link</td>
+            <td>La etiqueta 'link' se utiliza para establecer relaciones entre el documento actual y recursos externos, como hojas de estilo.</td>
+            <td>
+              <code>&lt;head&gt;<br>
+              &nbsp;&nbsp;&lt;link rel="stylesheet" href="estilos.css"&gt;<br>
+              &lt;/head&gt;</code>
+            </td>
+            <td>
+              <head>
+                <link rel="stylesheet" href="estilos.css">
+              </head>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/link">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>main</td>
+            <td>La etiqueta 'main' se utiliza para envolver el contenido principal o dominante de un documento.</td>
+            <td>
+              <code>&lt;main&gt;<br>
+              &nbsp;&nbsp;<!-- Contenido principal aquí --><br>
+              &lt;/main&gt;</code>
+            </td>
+            <td>
+              <main>
+                <!-- Contenido principal aquí -->
+              </main>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/main">Más información</a></td>
+          </tr>
+          <tr>
+            <td>map</td>
+            <td>La etiqueta 'map' se utiliza para definir mapas de imágenes que se asocian con elementos 'area' en una imagen.</td>
+            <td>
+              <code>&lt;map name="mapa"&gt;<br>
+              &nbsp;&nbsp;&lt;area shape="rect" coords="0,0,50,50" href="enlace1.html"&gt;<br>
+              &nbsp;&nbsp;&lt;area shape="circle" coords="100,100,50" href="enlace2.html"&gt;<br>
+              &lt;/map&gt;<br>
+              &lt;img src="imagen.jpg" usemap="#mapa"&gt;</code>
+            </td>
+            <td>
+              <map name="mapa">
+                <area shape="rect" coords="0,0,50,50" href="enlace1.html">
+                <area shape="circle" coords="100,100,50" href="enlace2.html">
+              </map>
+              <img src="imagen.jpg" usemap="#mapa">
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/map">Más información</a></td>
+          </tr>
+          <tr>
+            <td>mark</td>
+            <td>La etiqueta 'mark' se utiliza para resaltar o marcar partes de texto en un documento.</td>
+            <td>
+              <code>&lt;p&gt;Este es un &lt;mark&gt;texto resaltado&lt;/mark&gt;.&lt;/p&gt;</code>
+            </td>
+            <td>
+              <p>Este es un <mark>texto resaltado</mark>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/mark">Más información</a></td>
+          </tr>
+          <tr>
+            <td>menu</td>
+            <td>La etiqueta 'menu' se utiliza para representar un menú de comandos o lista de opciones.</td>
+            <td>
+              <code>&lt;menu&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Inicio&lt;/li&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Productos&lt;/li&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Contacto&lt;/li&gt;<br>
+              &lt;/menu&gt;</code>
+            </td>
+            <td>
+              <menu>
+                <li>Inicio</li>
+                <li>Productos</li>
+                <li>Contacto</li>
+              </menu>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/menu">Más información</a></td>
+          </tr>
+          <tr>
+            <td>meta</td>
+            <td>La etiqueta 'meta' se utiliza para proporcionar metadatos, como la codificación de caracteres o la descripción de la página.</td>
+            <td>
+              <code>&lt;head&gt;<br>
+              &nbsp;&nbsp;&lt;meta charset="UTF-8"&gt;<br>
+              &nbsp;&nbsp;&lt;meta name="description" content="Descripción de la página"&gt;<br>
+              &lt;/head&gt;</code>
+            </td>
+            <td>
+              <head>
+                <meta charset="UTF-8">
+                <meta name="description" content="Descripción de la página">
+              </head>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/meta">Más información</a></td>
+          </tr>
+          <tr>
+            <td>meter</td>
+            <td>La etiqueta 'meter' se utiliza para representar una medida escalar dentro de un rango conocido o un valor fraccional.</td>
+            <td>
+              <code>&lt;p&gt;El progreso es: &lt;meter value="0.6" min="0" max="1"&gt;60%&lt;/meter&gt;&lt;/p&gt;</code>
+            </td>
+            <td>
+              <p>El progreso es: <meter value="0.6" min="0" max="1">60%</meter></p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/meter">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>nav</td>
+            <td>La etiqueta 'nav' se utiliza para envolver secciones de navegación o enlaces de navegación en una página web.</td>
+            <td>
+              <code>&lt;nav&gt;<br>
+              &nbsp;&nbsp;&lt;a href="/"&gt;Inicio&lt;/a&gt; |<br>
+              &nbsp;&nbsp;&lt;a href="/productos"&gt;Productos&lt;/a&gt; |<br>
+              &nbsp;&nbsp;&lt;a href="/contacto"&gt;Contacto&lt;/a&gt;<br>
+              &lt;/nav&gt;</code>
+            </td>
+            <td>
+              <nav>
+                <a href="/">Inicio</a> |
+                <a href="/productos">Productos</a> |
+                <a href="/contacto">Contacto</a>
+              </nav>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/nav">Más información</a></td>
+          </tr>
+          <tr>
+            <td>noscript</td>
+            <td>La etiqueta 'noscript' se utiliza para proporcionar contenido alternativo o instrucciones para navegadores que no admiten JavaScript.</td>
+            <td>
+              <code>&lt;noscript&gt;<br>
+              &nbsp;&nbsp;&lt;p&gt;JavaScript está desactivado en su navegador.&lt;/p&gt;<br>
+              &lt;/noscript&gt;</code>
+            </td>
+            <td>
+              <noscript>
+                <p>JavaScript está desactivado en su navegador.</p>
+              </noscript>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/noscript">Más información</a></td>
+          </tr>
+          <tr>
+            <td>object</td>
+            <td>La etiqueta 'object' se utiliza para incrustar objetos multimedia o plugins en una página web.</td>
+            <td><code>&lt;object data="video.mp4" width="320" height="240"&gt;&lt;/object&gt;</code></td>
+            <td>
+              <object data="video.mp4" width="320" height="240"></object>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/object">Más información</a></td>
+          </tr>
+          <tr>
+            <td>ol</td>
+            <td>La etiqueta 'ol' se utiliza para crear listas ordenadas (con números o viñetas) en una página web.</td>
+            <td>
+              <code>&lt;ol&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Elemento 1&lt;/li&gt;<br>
+              &nbsp;&nbsp;&lt;li&gt;Elemento 2&lt;/li&gt;<br>
+              &lt;/ol&gt;</code>
+            </td>
+            <td>
+              <ol>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+              </ol>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ol">Más información</a></td>
+          </tr>
+          <tr>
+            <td>optgroup</td>
+            <td>La etiqueta 'optgroup' se utiliza para agrupar opciones relacionadas en un elemento 'select'.</td>
+            <td>
+              <code>&lt;select&gt;<br>
+              &nbsp;&nbsp;&lt;optgroup label="Frutas"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="manzana"&gt;Manzana&lt;/option&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="banana"&gt;Banana&lt;/option&gt;<br>
+              &nbsp;&nbsp;&lt;/optgroup&gt;<br>
+              &nbsp;&nbsp;&lt;optgroup label="Verduras"&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="zanahoria"&gt;Zanahoria&lt;/option&gt;<br>
+              &nbsp;&nbsp;&nbsp;&nbsp;&lt;option value="espinaca"&gt;Espinaca&lt;/option&gt;<br>
+              &nbsp;&nbsp;&lt;/optgroup&gt;<br>
+              &lt;/select&gt;</code>
+            </td>
+            <td>
+              <select>
+                <optgroup label="Frutas">
+                  <option value="manzana">Manzana</option>
+                  <option value="banana">Banana</option>
+                </optgroup>
+                <optgroup label="Verduras">
+                  <option value="zanahoria">Zanahoria</option>
+                  <option value="espinaca">Espinaca</option>
+                </optgroup>
+              </select>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/optgroup">Más información</a></td>
+          </tr>
+          <tr>
+            <td>option</td>
+            <td>La etiqueta 'option' se utiliza para definir opciones seleccionables en un elemento 'select'.</td>
+            <td>
+              <code>&lt;select&gt;<br>
+              &nbsp;&nbsp;&lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;<br>
+              &nbsp;&nbsp;&lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;<br>
+              &lt;/select&gt;</code>
+            </td>
+            <td>
+              <select>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+              </select>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/option">Más información</a></td>
+          </tr>
+          <tr>
+            <td>output</td>
+            <td>La etiqueta 'output' se utiliza para mostrar el resultado de un cálculo o proceso en un formulario web.</td>
+            <td>
+              <code>&lt;form oninput="resultado.value = a.valueAsNumber + b.valueAsNumber"&gt;<br>
+              &nbsp;&nbsp;&lt;input type="number" id="a" value="0"&gt;<br>
+              &nbsp;&nbsp;+<br>
+              &nbsp;&nbsp;&lt;input type="number" id="b" value="0"&gt;<br>
+              &nbsp;&nbsp;=&gt;<br>
+              &nbsp;&nbsp;&lt;output name="resultado"&gt;&lt;/output&gt;<br>
+              &lt;/form&gt;</code>
+            </td>
+            <td>
+              <form oninput="resultado.value = a.valueAsNumber + b.valueAsNumber">
+                <input type="number" id="a" value="0">
+                +
+                <input type="number" id="b" value="0">
+                =&gt;
+                <output name="resultado"></output>
+              </form>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/output">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>p</td>
+            <td>La etiqueta 'p' se utiliza para crear párrafos de texto.</td>
+            <td><code>&lt;p&gt;Este es un párrafo de ejemplo.&lt;/p&gt;</code></td>
+            <td><p>Este es un párrafo de ejemplo.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Elemento/p">Más información</a></td>
+          </tr>
+          <tr>
+            <td>picture</td>
+            <td>La etiqueta 'picture' se utiliza para mostrar imágenes responsivas con múltiples fuentes.</td>
+            <td>
+              <code>&lt;picture&gt;<br>
+              &emsp;&lt;source srcset="imagen-grande.jpg" media="(min-width: 800px)"&gt;<br>
+              &emsp;&lt;img src="imagen-pequeña.jpg" alt="Descripción de la imagen"&gt;<br>
+              &lt;/picture&gt;</code>
+            </td>
+            <td>
+              <picture>
+                <source srcset="imagen-grande.jpg" media="(min-width: 800px)">
+                <img src="imagen-pequeña.jpg" alt="Descripción de la imagen">
+              </picture>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/picture">Más información</a></td>
+          </tr>
+          <tr>
+            <td>pre</td>
+            <td>La etiqueta 'pre' se utiliza para mostrar texto preformateado con espaciado y saltos de línea tal como se encuentra en el código fuente.</td>
+            <td>
+              <code>&lt;pre&gt;<br>
+              &emsp;Texto preformateado<br>
+              &emsp;con espacios y saltos de línea.<br>
+              &lt;/pre&gt;</code>
+            </td>
+            <td>
+              <pre>
+                Texto preformateado
+                con espacios y saltos de línea.
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/pre">Más información</a></td>
+          </tr>
+          <tr>
+            <td>progress</td>
+            <td>La etiqueta 'progress' se utiliza para crear barras de progreso en formularios web.</td>
+            <td><code>&lt;progress value="50" max="100"&gt;50%&lt;/progress&gt;</code></td>
+            <td><progress value="50" max="100">50%</progress></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/progress">Más información</a></td>
+          </tr>
+          <tr>
+            <td>q</td>
+            <td>La etiqueta 'q' se utiliza para marcar una cita en línea, generalmente con comillas.</td>
+            <td><code>&lt;p&gt;El autor dijo &lt;q&gt;Esto es una cita en línea&lt;/q&gt;.&lt;/p&gt;</code></td>
+            <td><p>El autor dijo <q>Esto es una cita en línea</q>.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/q">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>rp</td>
+            <td>La etiqueta 'rp' se utiliza en ruby para proporcionar una alternativa de presentación para navegadores que no admiten ruby.</td>
+            <td>
+              <code>&lt;ruby&gt;<br>
+              &emsp;日本語 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;にほんご&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+              &lt;/ruby&gt;</code>
+            </td>
+            <td><ruby>日本語 <rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/rp">Más información</a></td>
+          </tr>
+          <tr>
+            <td>rt</td>
+            <td>La etiqueta 'rt' se utiliza en ruby para representar el texto de la anotación ruby.</td>
+            <td>
+              <code>&lt;ruby&gt;<br>
+              &emsp;日本語 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;にほんご&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+              &lt;/ruby&gt;</code>
+            </td>
+            <td><ruby>日本語 <rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/rt">Más información</a></td>
+          </tr>
+          <tr>
+            <td>ruby</td>
+            <td>La etiqueta 'ruby' se utiliza para anotaciones ruby que se utilizan en texto en japonés u otros idiomas con caracteres similares.</td>
+            <td>
+              <code>&lt;ruby&gt;<br>
+              &emsp;日本語 &lt;rp&gt;(&lt;/rp&gt;&lt;rt&gt;にほんご&lt;/rt&gt;&lt;rp&gt;)&lt;/rp&gt;<br>
+              &lt;/ruby&gt;</code>
+            </td>
+            <td><ruby>日本語 <rp>(</rp><rt>にほんご</rt><rp>)</rp></ruby></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ruby">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>s</td>
+            <td>La etiqueta 's' se utiliza para marcar texto que no es preciso o es inexacto.</td>
+            <td><code>&lt;p&gt;Este es un &lt;s&gt;texto inexacto&lt;/s&gt;.&lt;/p&gt;</code></td>
+            <td><del>texto inexacto</del></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/s">Más información</a></td>
+          </tr>
+          <tr>
+            <td>samp</td>
+            <td>La etiqueta 'samp' se utiliza para representar la salida de un programa de computadora o una muestra de texto.</td>
+            <td><code>&lt;p&gt;El resultado es &lt;samp&gt;42&lt;/samp&gt;.&lt;/p&gt;</code></td>
+            <td><samp>42</samp></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/samp">Más información</a></td>
+          </tr>
+          <tr>
+            <td>select</td>
+            <td>La etiqueta 'select' se utiliza para crear listas desplegables de opciones en formularios web.</td>
+            <td>
+              <code>&lt;select&gt;<br>
+              &emsp;&lt;option value="opcion1"&gt;Opción 1&lt;/option&gt;<br>
+              &emsp;&lt;option value="opcion2"&gt;Opción 2&lt;/option&gt;<br>
+              &lt;/select&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'select' -->
+              <select>
+                <option value="opcion1">Opción 1</option>
+                <option value="opcion2">Opción 2</option>
+              </select>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/select">Más información</a></td>
+          </tr>
+          <tr>
+            <td>slot</td>
+            <td>La etiqueta 'slot' se utiliza en web components para definir un espacio para contenido en una sombra.</td>
+            <td><code>&lt;slot name="contenido"&gt;&lt;/slot&gt;</code></td>
+            <td>
+              <!-- Ejemplo de vista web para 'slot' -->
+              <div>
+                <slot name="contenido">Contenido predeterminado</slot>
+              </div>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/slot">Más información</a></td>
+          </tr>
+          <tr>
+            <td>small</td>
+            <td>La etiqueta 'small' se utiliza para representar texto secundario o comentarios laterales en un documento.</td>
+            <td><code>&lt;p&gt;Este es un &lt;small&gt;comentario secundario&lt;/small&gt;.&lt;/p&gt;</code></td>
+            <td>
+              <!-- Ejemplo de vista web para 'small' -->
+              <p>Este es un <small>comentario secundario</small>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/small">Más información</a></td>
+          </tr>
+          <tr>
+            <td>source</td>
+            <td>La etiqueta 'source' se utiliza para especificar múltiples fuentes de medios, como imágenes o video, para elementos 'img', 'video' o 'audio'.</td>
+            <td>
+              <code>&lt;video controls&gt;<br>
+              &emsp;&lt;source src="video.mp4" type="video/mp4"&gt;<br>
+              &emsp;&lt;source src="video.webm" type="video/webm"&gt;<br>
+              &lt;/video&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'source' -->
+              <video controls>
+                <source src="video.mp4" type="video/mp4">
+                <source src="video.webm" type="video/webm">
+                Tu navegador no admite el elemento de video.
+              </video>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/source">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>span</td>
+            <td>La etiqueta 'span' se utiliza como un contenedor genérico en línea para aplicar estilos o scripts a una parte de texto.</td>
+            <td>
+              <code>&lt;p&gt;Este es un &lt;span&gt;texto con estilo&lt;/span&gt;.&lt;/p&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'span' -->
+              <p>Este es un <span>texto con estilo</span>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/span">Más información</a></td>
+          </tr>
+          <tr>
+            <td>strong</td>
+            <td>La etiqueta 'strong' se utiliza para indicar que un texto tiene un mayor nivel de importancia o relevancia.</td>
+            <td>
+              <code>&lt;p&gt;Este es un &lt;strong&gt;texto importante&lt;/strong&gt;.&lt;/p&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'strong' -->
+              <p>Este es un <strong>texto importante</strong>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/strong">Más información</a></td>
+          </tr>
+          <tr>
+            <td>style</td>
+            <td>La etiqueta 'style' se utiliza para agregar reglas de estilo CSS directamente en un documento HTML.</td>
+            <td>
+              <code>&lt;style&gt;<br>
+              &emsp;p {<br>
+              &emsp;&emsp;color: blue;<br>
+              &emsp;}<br>
+              &lt;/style&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'style' -->
+              <style>
+                p {
+                  color: blue;
+                }
+              </style>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/style">Más información</a></td>
+          </tr>
+          <tr>
+            <td>sub</td>
+            <td>La etiqueta 'sub' se utiliza para representar texto en subíndice, como fórmulas químicas o matemáticas.</td>
+            <td>
+              <code>&lt;p&gt;Fórmula: H&lt;sub&gt;2&lt;/sub&gt;O&lt;/p&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'sub' -->
+              <p>Fórmula: H<sub>2</sub>O</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sub">Más información</a></td>
+          </tr>
+          <tr>
+            <td>summary</td>
+            <td>La etiqueta 'summary' se utiliza en elementos 'details' para proporcionar un título o resumen visible antes de expandir el contenido.</td>
+            <td>
+              <code>&lt;details&gt;<br>
+              &emsp;&lt;summary&gt;Mostrar detalles&lt;/summary&gt;<br>
+              &emsp;&lt;!-- Contenido de los detalles aquí --&gt;<br>
+              &lt;/details&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'summary' -->
+              <details>
+                <summary>Mostrar detalles</summary>
+                <p>Este es el contenido de los detalles.</p>
+              </details>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/summary">Más información</a></td>
+          </tr>
+          <tr>
+            <td>sup</td>
+            <td>La etiqueta 'sup' se utiliza para representar texto en superíndice, como exponentes matemáticos.</td>
+            <td>
+              <code>&lt;p&gt;x&lt;sup&gt;2&lt;/sup&gt;&lt;/p&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'sup' -->
+              <p>x<sup>2</sup></p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/sup">Más información</a></td>
+          </tr>
+          <tr>
+            <td>SVG svg</td>
+            <td>La etiqueta 'svg' se utiliza para crear gráficos vectoriales escalables en SVG (Scalable Vector Graphics).</td>
+            <td>
+              <code>&lt;svg width="100" height="100"&gt;<br>
+              &emsp;&lt;circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" /&gt;<br>
+              &lt;/svg&gt;</code>
+            </td>
+            <td>
+              <!-- Ejemplo de vista web para 'svg' -->
+              <svg width="100" height="100">
+                <circle cx="50" cy="50" r="40" stroke="black" stroke-width="2" fill="red" />
+              </svg>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/SVG">Más información</a></td>
+          </tr>
+          
+          
+          <tr>
+            <td>table</td>
+            <td>Se utiliza para crear tablas en HTML para organizar datos en filas y columnas.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Encabezado 1&lt;/th&gt;
+                    &lt;th&gt;Encabezado 2&lt;/th&gt;
+                  &lt;/tr&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Dato 1&lt;/td&gt;
+                    &lt;td&gt;Dato 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td>
+              <!-- Vista web de la tabla -->
+              <table>
                 <tr>
-                    <th>Etiqueta</th>
-                    <th>Descripción</th>
-                    <th>Mas informacion</th>
+                  <th>Encabezado 1</th>
+                  <th>Encabezado 2</th>
                 </tr>
-            </thead>
-            <tbody>
                 <tr>
-                  <td>html</td>
-                  <td>Representa la raiz del documento html.</td>
-                  <td><a href="https://developer.mozilla.org/en-US/docs/Web/HTML/Element/html" target="_blank">Mas informacion</a></td>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
                 </tr>
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/table">Más información</a></td>
+          </tr>
+          <tr>
+            <td>tbody</td>
+            <td>La etiqueta 'tbody' se utiliza para agrupar un conjunto de filas en una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tbody&gt;
+                    <!-- Filas de la tabla aquí -->
+                  &lt;/tbody&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td>
+              <!-- Vista web de la tabla -->
+              <table>
+                <tbody>
+                  <!-- Filas de la tabla aquí -->
+                </tbody>
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tbody">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>td</td>
+            <td>La etiqueta 'td' se utiliza para representar una celda de una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Dato 1&lt;/td&gt;
+                    &lt;td&gt;Dato 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/td">Más información</a></td>
+          </tr>
+          <tr>
+            <td>template</td>
+            <td>La etiqueta 'template' se utiliza para almacenar contenido que no debe ser renderizado de inmediato.</td>
+            <td>
+              <pre>
+                &lt;template&gt;
+                  <!-- Contenido que no se muestra de inmediato aquí -->
+                &lt;/template&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/template">Más información</a></td>
+          </tr>
+          <tr>
+            <td>textarea</td>
+            <td>La etiqueta 'textarea' se utiliza para crear controles de texto multilinea en formularios web.</td>
+            <td>
+              <pre>
+                &lt;textarea id="comentario" name="comentario" rows="4" cols="50"&gt;&lt;/textarea&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/textarea">Más información</a></td>
+          </tr>
+          <tr>
+            <td>tfoot</td>
+            <td>La etiqueta 'tfoot' se utiliza para agrupar filas de pie de tabla en una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tfoot&gt;
+                  &lt;/tfoot&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tfoot">Más información</a></td>
+          </tr>
+          <tr>
+            <td>th</td>
+            <td>La etiqueta 'th' se utiliza para representar una celda de encabezado en una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tr&gt;
+                    &lt;th&gt;Encabezado 1&lt;/th&gt;
+                    &lt;th&gt;Encabezado 2&lt;/th&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/th">Más información</a></td>
+          </tr>
+          <tr>
+            <td>thead</td>
+            <td>La etiqueta 'thead' se utiliza para agrupar filas de encabezado en una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;thead&gt;
+                  &lt;/thead&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/thead">Más información</a></td>
+          </tr>
+          <tr>
+            <td>time</td>
+            <td>La etiqueta 'time' se utiliza para representar información de fecha o tiempo en un documento HTML.</td>
+            <td>
+              <pre>
+                &lt;p&gt;La fecha actual es &lt;time datetime="2023-09-20"&gt;20 de septiembre de 2023&lt;/time&gt;.&lt;/p&gt;
+              </pre>
+            </td>
+            <td>
+              <p>La fecha actual es <time datetime="2023-09-20">20 de septiembre de 2023</time>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/time">Más información</a></td>
+          </tr>
+          <tr>
+            <td>title</td>
+            <td>La etiqueta 'title' se utiliza para definir el título del documento HTML que se muestra en la pestaña del navegador.</td>
+            <td>
+              <pre>
+                &lt;head&gt;
+                  &lt;title&gt;Título de la página&lt;/title&gt;
+                &lt;/head&gt;
+              </pre>
+            </td>
+            <td>
+              <head>
+                <title>Título de la página</title>
+              </head>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/title">Más información</a></td>
+          </tr>
+          <tr>
+            <td>tr</td>
+            <td>La etiqueta 'tr' se utiliza para representar una fila de una tabla HTML.</td>
+            <td>
+              <pre>
+                &lt;table&gt;
+                  &lt;tr&gt;
+                    &lt;td&gt;Dato 1&lt;/td&gt;
+                    &lt;td&gt;Dato 2&lt;/td&gt;
+                  &lt;/tr&gt;
+                &lt;/table&gt;
+              </pre>
+            </td>
+            <td>
+              <table>
                 <tr>
-                    <td>div</td>
-                    <td>Contenedor genérico para elementos de la categoría flow</td>
-                    <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/div" target="_blank">Mas informacion</a></td>
-                  </tr>
-                  <tr>
-                    <td>span</td>
-                    <td>Contenedor genérico para elementos de la categoría phrasing</td>
-                    <td><a href="https://www.w3schools.com/tags/tag_span.asp"></a></td>
-                  </tr>
-                  <tr>
-                    <td>header</td>
-                    <td>Describe contenido destinado a la parte superior o encabezado de la página</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>article</td>
-                    <td>Encierra contenido independiente del resto de la página web</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>section</td>
-                    <td>Indica contenido que típicamente cubre un tema específico</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>nav</td>
-                    <td>Representa una sección de una página cuyo propósito es proporcionar enlaces de navegación</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>aside</td>
-                    <td>Contenido que solo está indirectamente relacionado con el contenido que lo rodea</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>footer</td>
-                    <td>Representa el pie de página</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>main</td>
-                    <td>Representa los contenidos dominantes del documento</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>h1- h6</td>
-                    <td>Proporciona 6 niveles de encabezados</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>p</td>
-                    <td>Define los párrafos</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>br</td>
-                    <td>Hace que el navegador avance a la siguiente línea</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>hr</td>
-                    <td>Representa una transición entre párrafos a un tema separado, pero relacionado</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>wbr></td>
-                    <td>Indica dónde podría insertar un salto de línea</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>sup></td>
-                    <td>Permite definir superíndices</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>sub></td>
-                    <td>Permite definir subíndices</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>strong></td>
-                    <td>Indica que su contenido tiene una gran importancia</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>em></td>
-                    <td>Pone las palabras en cursiva para denotar énfasis</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>mark></td>
-                    <td>Permite resaltar texto de interés</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>q></td>
-                    <td>Indica que el texto encerrado es una cita</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>blockquote></td>
-                    <td>Indica que el texto contenido es una cita extensa</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>cite</td>
-                    <td>Permite incluir el nombre de un trabajo</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>dfn</td>
-                    <td>Se utiliza para identificar el término a definir</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>abbr</td>
-                    <td>Se utiliza para identificar una abreviatura</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>small</td>
-                    <td>Permite definir la letra chica y los comentarios secundarios de una página</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>ins</td>
-                    <td>Marca las partes de un texto que han sido añadidas</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>del</td>
-                    <td>Marca las partes de un texto que han sido eliminadas del documento</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>s</td>
-                    <td>Muestra el texto tachado con una línea que lo atraviesa</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>code</td>
-                    <td>Muestra su contenido con formato para indicar que el texto es un fragmento corto de código</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>samp</td>
-                    <td>Se utiliza para encerrar texto que representa los mensajes de la computadora al usuario</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>kbd</td>
-                    <td>Representa un fragmento de texto que indica la entrada del usuario</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>pre</td>
-                    <td>Muestra el texto respetando su formato</td>
-                    <td></td>
-                  </tr>
-                  <tr>
-                    <td>address</td>
-                    <td>Proporciona información de contacto</td>
-                    <td></td>
-                  </tr>
-            </tbody>
-        </table>
+                  <td>Dato 1</td>
+                  <td>Dato 2</td>
+                </tr>
+              </table>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/tr">Más información</a></td>
+          </tr>
+          <tr>
+            <td>track</td>
+            <td>La etiqueta 'track' se utiliza para agregar pistas de texto cronometrado a elementos 'audio' o 'video'.</td>
+            <td>
+              <pre>
+                &lt;video controls&gt;
+                  &lt;track src="subtitulos.vtt" kind="subtitles" srclang="es"&gt;
+                &lt;/video&gt;
+              </pre>
+            </td>
+            <td>
+              <video controls>
+                <track src="subtitulos.vtt" kind="subtitles" srclang="es">
+              </video>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/track">Más información</a></td>
+          </tr>
+          <tr>
+            <td>u</td>
+            <td>La etiqueta 'u' se utiliza para representar texto que se debe mostrar con estilo subrayado.</td>
+            <td>
+              <pre>
+                &lt;p&gt;Este es un &lt;u&gt;texto subrayado&lt;/u&gt;.&lt;/p&gt;
+              </pre>
+            </td>
+            <td>
+              <p>Este es un <u>texto subrayado</u>.</p>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/u">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>ul</td>
+            <td>La etiqueta 'ul' se utiliza para crear listas no ordenadas (viñetas) en un documento HTML.</td>
+            <td>
+              <pre>
+                &lt;ul&gt;
+                  &lt;li&gt;Elemento 1&lt;/li&gt;
+                  &lt;li&gt;Elemento 2&lt;/li&gt;
+                &lt;/ul&gt;
+              </pre>
+            </td>
+            <td>
+              <ul>
+                <li>Elemento 1</li>
+                <li>Elemento 2</li>
+              </ul>
+            </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/ul">Más información</a></td>
+          </tr>
+          
+          <tr>
+            <td>var</td>
+            <td>La etiqueta 'var' se utiliza para representar una variable en un documento HTML.</td>
+            <td>
+              <pre>
+                &lt;p&gt;El valor de la variable &lt;var&gt;x&lt;/var&gt; es 42.&lt;/p&gt;
+              </pre>
+            </td>
+            <td><p>El valor de la variable <var>x</var> es 42.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/var">Más información</a></td>
+          </tr>
+          <tr>
+            <td>video</td>
+            <td>La etiqueta 'video' se utiliza para incrustar y reproducir contenido de video en una página web.</td>
+            <td>
+              <pre>
+                &lt;video controls width="320" height="240"&gt;
+                  &lt;source src="video.mp4" type="video/mp4"&gt;
+                  Tu navegador no admite el elemento de video.
+                &lt;/video&gt;
+              </pre>
+            </td>
+            <td>
+              <video controls width="320" height="240">
+              <source src="video.mp4" type="video/mp4">
+              Tu navegador no admite el elemento de video.
+            </video>
+          </td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/video">Más información</a></td>
+          </tr>
+          <tr>
+            <td>wbr</td>
+            <td>La etiqueta 'wbr' Indica dónde podría insertar un salto de línea.</td>
+            <td>
+              <pre>
+                &lt;p&gt;Esta es una oracion larga que puede&lt;br&gt;dividirse en dos líneas.&lt;/p&gt;
+              </pre>
+            </td>
+            <td> <p>Esta es una oracion larga que puede<br>dividirse en dos líneas.</p></td>
+            <td><a href="https://developer.mozilla.org/es/docs/Web/HTML/Element/wbr">Más información</a></td>
+          </tr>
+          
+          
+          
+
+        </tbody>
+      </table>
     </main>
     <footer>
         <p>© 2023 Mi página</p>

@@ -1,52 +1,169 @@
-/* Estilos generales */
+/* Paleta de colores */
+:root {
+    --color-primary: #3F0071;
+    --color-secondary: #FB2576;
+    --color-tertiary: #0002A1;
+}
+
+/* Estilos para el cuerpo de la página */
 body {
     font-family: Arial, sans-serif;
+    background-color: #fff;
+    color: #333; /* Texto principal más oscuro para un mejor contraste */
     margin: 0;
     padding: 0;
 }
 
-
+/* Estilos para el encabezado */
 header {
-    background-color: darkblue;
-    color: white;
+    background-color: var(--color-primary);
+    color: #fff;
     text-align: center;
-    padding: 10px 0;
+    padding: 20px 0;
 }
 
 header h1 {
-    margin: 0;
+    font-size: 2.5rem;
 }
 
+/* Estilos para la barra de navegación */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
 
 nav ul li {
     display: inline;
     margin-right: 20px;
-    color: aliceblue;
 }
 
-
-main {
-    max-width: 800px;
-    margin: 0 auto;
-    padding: 20px;
+nav ul li:last-child {
+    margin-right: 0;
 }
 
-article {
-    margin-bottom: 20px;
+nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.2rem;
 }
 
-th {
-    background-color: darkblue;
+/* Estilos para la tabla */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+table th, table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #dcdcdc;
+}
+
+table th {
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+/* Estilos para los enlaces */
+a {
+    color: var(--color-tertiary);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+a:hover {
+    color: var(--color-primary);
+}
+
+/* Estilos para los botones */
+button {
+    background-color: var(--color-primary);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: var(--color-secondary);
+}
+
+/* Estilos para los elementos de código */
+code {
+    color: var(--color-primary);
+    /*background-color: #f0f0f0; /* Fondo más claro para resaltar el código */
+    padding: 2px 5px;
+    font-family: Consolas, monospace;
+}
+
+/* Estilos para las citas */
+cite {
+    font-style: italic;
     color: white;
 }
 
-td {
-    background-color: lightgrey;
-}
-
-footer {
-    background-color: darkblue;
-    color: white;
+/* Estilos para las tablas de vista web */
+tbody td:nth-child(4) {
+    background-color: var(--color-primary);
+    padding: 10px;
+    font-family: Arial, sans-serif;
     text-align: center;
-    padding: 10px 0;
+}
+
+/* Estilos para los elementos con dirección aislada */
+bdi {
+    unicode-bidi: isolate;
+    font-weight: bold;
+    color: white;
+}
+
+/* Estilos para los elementos con dirección derecha a izquierda */
+bdo[dir="rtl"] {
+    unicode-bidi: bidi-override;
+    direction: rtl;
+}
+
+/* Estilos para los elementos de contenido lateral */
+aside {
+    background-color: var(--color-tertiary);
+    padding: 10px;
+    border-left: 4px solid var(--color-primary);
+}
+
+/* Estilos para los elementos del artículo */
+article {
+    background-color: var(--color-tertiary);
+    padding: 10px;
+    border-left: 4px solid var(--color-primary);
+}
+
+/* Estilos para las tablas de vista web */
+tbody td:nth-child(4) {
+    background-color: var(--color-primary);
+    color: #fff; /* Texto en color blanco para un mejor contraste */
+    padding: 10px;
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+
+/* Estilos para los enlaces en la columna Vista Web */
+tbody td:nth-child(4) a {
+    color: #fff; /* Texto en color blanco para enlaces en la columna Vista Web */
+    text-decoration: underline; /* Subrayado para indicar enlaces */
+}
+
+/* Estilos para los enlaces en la columna Vista Web al pasar el mouse */
+tbody td:nth-child(4) a:hover {
+    color: var(--color-secondary); /* Cambio de color al pasar el mouse para resaltar enlaces */
+}
+
+canvas{
+    background-color: --color-secondary;
 }
